@@ -21,7 +21,7 @@ ssh_key_label       = "yussuf-tfssh"
 rhel_username       = "root"
 
 # VSI Common
-image_id            = "9a6aed49-d4f7-4464-9056-0e0223d2a2f0"
+image_id            = "r006-a5636224-fcce-11e9-8542-cf9657fdcaa3"
 hostname_prefix     = "yussuf"
 docker_volume_prefix = "yussuf-vol"
 docker_volume_size  = "50"
