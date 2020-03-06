@@ -8,13 +8,13 @@ variable "resource_group_id" {
 
 variable "vpc_name" {
     description = "Denotes the name of the VPC to create"
-    default     = "tftest-vpc01"
+    default     = "tftest-x-vpc01"
 }
 
 ###
 variable "ssh_key_label" {
     description = "the name of the SSHKEY that will be created "
-    default     = "tf-sshkey2"
+    default     = "tf-x-sshkey2"
 } 
 ###
 variable "private_ssh_key" {
@@ -35,7 +35,7 @@ variable "public_ssh_string" {
 
 variable "subnet_name" {
     description = "Denotes the name of the subnet to create"
-    default     = "tfest-subnet"
+    default     = "tfest-x-subnet"
 }
 variable "ipv4_cidr_block" {
     description = "Denotes the CIDR block to create for the network subnet"
@@ -53,7 +53,7 @@ variable "hostname_prefix" {
 }
 variable "docker_volume_prefix" {
     description = "A prefix to put in front of the docker volume name"
-    default = "tftest-dockervol"
+    default = "tftest-x-dockervol"
 }
 variable "docker_volume_size" {
     description = "Size in GB for docker volume"
@@ -66,7 +66,7 @@ variable "master" {
     default = {
         name        = "master"
         profile_id  = "bp2-2x8"
-        fip_name    = "master-fip"
+        fip_name    = "master-x-fip"
         count       = "3"
     }
 }
@@ -77,7 +77,7 @@ variable "infra" {
     default = {
         name        = "infra"
         profile_id  = "bp2-2x8"
-        fip_name    = "infra-fip"
+        fip_name    = "infra-x-fip"
         count       = "1"
     }
 }
@@ -88,7 +88,7 @@ variable "worker" {
     default = {
         name        = "worker"
         profile_id  = "bp2-2x8"
-        fip_name    = "worker-fip"
+        fip_name    = "worker-x-fip"
         count       = "2"
     }
 }
