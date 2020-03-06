@@ -45,7 +45,7 @@ variable "ipv4_cidr_block" {
 ## 
 variable "image_id" {
     description = "The OS image ID that will be loaded for all nodes"
-    default     = "9a6aed49-d4f7-4464-9056-0e0223d2a2f0"
+    default     = "r006-a5636224-fcce-11e9-8542-cf9657fdcaa3"
 }
 variable "hostname_prefix" {
     description = "A prefix to put in front of the hostname for all nodes"
