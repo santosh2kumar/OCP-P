@@ -8,13 +8,13 @@ variable "resource_group_id" {
 
 variable "vpc_name" {
     description = "Denotes the name of the VPC to create"
-    default     = "tftest-x-vpc01"
+    default     = "tftest-p-vpc01"
 }
 
 ###
 variable "ssh_key_label" {
     description = "the name of the SSHKEY that will be created "
-    default     = "tf-x-sshkey2"
+    default     = "tf-p-sshkey2"
 } 
 ###
 variable "private_ssh_key" {
@@ -35,7 +35,7 @@ variable "public_ssh_string" {
 
 variable "subnet_name" {
     description = "Denotes the name of the subnet to create"
-    default     = "tfest-x-subnet"
+    default     = "tfest-p-subnet"
 }
 variable "ipv4_cidr_block" {
     description = "Denotes the CIDR block to create for the network subnet"
@@ -49,11 +49,11 @@ variable "image_id" {
 }
 variable "hostname_prefix" {
     description = "A prefix to put in front of the hostname for all nodes"
-    default = "tftest"
+    default = "tftest-p"
 }
 variable "docker_volume_prefix" {
     description = "A prefix to put in front of the docker volume name"
-    default = "tftest-x-dockervol"
+    default = "tftest-p-dockervol"
 }
 variable "docker_volume_size" {
     description = "Size in GB for docker volume"
@@ -64,9 +64,9 @@ variable "docker_volume_size" {
 variable "master" {
     type = "map"
     default = {
-        name        = "master"
+        name        = "master-p"
         profile_id  = "bp2-2x8"
-        fip_name    = "master-x-fip"
+        fip_name    = "master-p-fip"
         count       = "3"
     }
 }
@@ -75,9 +75,9 @@ variable "master" {
 variable "infra" {
     type = "map"
     default = {
-        name        = "infra"
+        name        = "infra-p"
         profile_id  = "bp2-2x8"
-        fip_name    = "infra-x-fip"
+        fip_name    = "infra-p-fip"
         count       = "1"
     }
 }
@@ -86,9 +86,9 @@ variable "infra" {
 variable "worker" {
     type = "map"
     default = {
-        name        = "worker"
+        name        = "worker-p"
         profile_id  = "bp2-2x8"
-        fip_name    = "worker-x-fip"
+        fip_name    = "worker-p-fip"
         count       = "2"
     }
 }
